@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MADESHKAF | Современная мебель на заказ</title>
+    <link rel="stylesheet" href="shkaf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="png/icon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<header class="transparent-header">
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>MADESHKAF</h1>
+        </div>
+        
+        <!-- бурег -->
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- навигация -->
+        <div class="nav-links" id="navLinks">
+            <a href="#">О нас</a>
+            <a href="#">Каталог</a>
+            <a href="#">Материалы</a>
+            <a href="#">Рассчитать стоимость</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Контакты</a>
+        </div>
+        
+        <div class="header-contact">
+            <div class="header-phone">+375 (25) 919-92-90</div>
+            <div class="header-hours">Пн-Вс 9:00-21:00</div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- секция для счетчка -->
+    <section class="hero">
+    
+
+        <!-- форма скидки -->
+        <div class="promo-floating-card">
+            <h3 class="promo-title">Шкафы на заказ</h3>
+            <p class="promo-subtitle">По заявке с сайта скидка 10% каждому покупателю</p>
+            <p class="promo-deadline-label">До конца акции осталось</p>
+
+            <div class="promo-timer">
+                <div class="timer-block">
+                    <span class="timer-digits" id="days">00</span>
+                    <span class="timer-label">Дни</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-digits" id="hours">00</span>
+                    <span class="timer-label">Часы</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-digits" id="minutes">30</span>
+                    <span class="timer-label">Мин</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-digits" id="seconds">59</span>
+                    <span class="timer-label">Сек</span>
+                </div>
+            </div>
+
+            <div class="promo-form">
+                <input type="tel" id="phoneInput" placeholder="Введите номер телефона" class="promo-phone-input">
+                <button id="getDiscountBtn" class="promo-button">Получить скидку</button>
+            </div>
+        </div>
+    </section>
+<!-- для пустой формы теста -->
+<section class="cost-section">
+    <div class="container cost-container">
+        <div class="cost-content">
+            <h2 class="cost-title">Узнайте стоимость</h2>
+            <h2 class="cost-title">мебели</h2>
+            <p class="cost-subtitle">Ответьте на вопросы, получите скидку и бесплатный</p>
+            <p class="cost-subtitle">дизайн-проект</p>
+            <a href="#" class="btn cost-btn">Пройти тест</a>
+        </div>
+        <div class="cost-image">
+            <img src="png/qw.png" alt="Мебель">
+        </div>
+    </div>
+    <div class="custom-divider"></div>
+</section>
+
+    <!-- о нас с преимуществами -->
+    <section class="about">
+        <div class="container">
+            <div class="about-text">
+                <h3 class="section-title" style="margin-bottom:0.5rem">О нас</h3>
+                <p>Мы рады видеть вас на нашем сайте, здесь представлены примеры наших работ и мебель, которую 
+                    мы можем изготовить, в том числе по вашим индивидуальным запросам.
+                    Мы поможем сделать вашу квартиру, дом или офис более комфортным, функциональным 
+                    и привлекательным. В производстве мебели мы используем лучшие материалы и современное оборудование, 
+                    чтобы создавать по-настоящему красивую, удобную и качественную мебель.</p>
+            </div>
+
+            <div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="png/6.png" alt="Фото 1" class="gallery-img">
+        <p class="gallery-caption">Рассрочки</p>
+    </div>
+    <div class="gallery-item">
+        <img src="png/5.png" alt="Фото 2" class="gallery-img">
+        <p class="gallery-caption">Заводские цены</p>
+    </div>
+    <div class="gallery-item">
+        <img src="png/4.png" alt="Фото 3" class="gallery-img">
+        <p class="gallery-caption">Оперативные сроки</p>
+    </div>
+    <div class="gallery-item">
+        <img src="png/2.png" alt="Фото 4" class="gallery-img">
+        <p class="gallery-caption">Акции, скидки, бонусы</p>
+    </div>
+    <div class="gallery-item">
+        <img src="png/3.png" alt="Фото 5" class="gallery-img">
+        <p class="gallery-caption">Европейское качество</p>
+    </div>
+    <div class="gallery-item">
+        <img src="png/1.png" alt="Фото 6" class="gallery-img">
+        <p class="gallery-caption">Бесплатная 3d визуализация</p>
+    </div>
+</div>
+         <div class="snake-line-container">
+    <svg class="snake-line" viewBox="0 0 800 150" preserveAspectRatio="none">
+        <polyline points="40,0 40,40 760,40 760,80 400,80" 
+                  fill="none" 
+                  stroke="#C0AD95" 
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        <text x="420" y="65" text-anchor="middle" fill="#2c3e2f" font-family="'Gilroy Light', sans-serif" font-size="14" font-weight="500">
+            Возможность рассрочки от нашей компании с 0% переплат!
+        </text>
+    </svg>
+</div>   
+            
+        </div>
+    </section>
+
+    <!-- каталог -->
+    <section class="catalog">
+    <div class="container">
+    
+<div class="catalog-block">
+    <h3 class="block-title">Каталог</h3>
+    <div class="catalog-cards">
+        <div class="catalog-card">
+            <img src="png/w.png"  class="catalog-img">
+        </div>
+        <div class="catalog-card">
+            <img src="png/e.png"  class="catalog-img">
+        </div>
+        <div class="catalog-card">
+            <img src="png/r.png"  class="catalog-img">
+        </div>
+    </div>
+</div>
+
+<div class="materials-block">
+    <h3 class="block-title">Современные материалы</h3>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="materials">Материалы</button>
+        <button class="tab-btn" data-tab="furniture">Фурнитура</button>
+    </div>
+
+    <!-- карусель 1-->
+    <div class="carousel-wrapper active" id="carousel-materials">
+        <div class="carousel-container">
+            <div class="carousel-track" id="track-materials">
+                <div class="carousel-slide"><img src="png/m.jpg" alt="Материал 1"><p>Массив дуба</p></div>
+                <div class="carousel-slide"><img src="png/f.jpg" alt="Материал 2"><p>Фанера</p></div>
+                <div class="carousel-slide"><img src="png/p.jpg" alt="Материал 3"><p>МДФ</p></div>
+                <div class="carousel-slide"><img src="png/s.png" alt="Материал 4"><p>Стекло</p></div>
+                <div class="carousel-slide"><img src="png/l.png" alt="Материал 5"><p>ЛДСП</p></div>
+                <div class="carousel-slide"><img src="png/m.jpg" alt="Материал 1"><p>Массив дуба</p></div>
+                <div class="carousel-slide"><img src="png/f.jpg" alt="Материал 2"><p>Фанера</p></div>
+                <div class="carousel-slide"><img src="png/p.jpg" alt="Материал 3"><p>МДФ</p></div>
+                <div class="carousel-slide"><img src="png/s.png" alt="Материал 4"><p>Стекло</p></div>
+                <div class="carousel-slide"><img src="png/l.png" alt="Материал 5"><p>ЛДСП</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- карусель два -->
+    <div class="carousel-wrapper" id="carousel-furniture">
+        <div class="carousel-container">
+            <div class="carousel-track" id="track-furniture">
+                <div class="carousel-slide"><img src="png/a (1).jpg" alt="Фурнитура 1"><p>Конфирмат</p></div>
+                <div class="carousel-slide"><img src="png/a (1).webp" alt="Фурнитура 2"><p>Петли Blum</p></div>
+                <div class="carousel-slide"><img src="png/a (2).jpg" alt="Фурнитура 3"><p>Выдвижные системы</p></div>
+                <div class="carousel-slide"><img src="png/a (2).webp" alt="Фурнитура 4"><p>Амортизаторы</p></div>
+                <div class="carousel-slide"><img src="png/a (3).webp" alt="Фурнитура 5"><p>Секционные углы</p></div>
+                <div class="carousel-slide"><img src="png/a (1).jpg" alt="Фурнитура 1"><p>Конфирмат</p></div>
+                <div class="carousel-slide"><img src="png/a (1).webp" alt="Фурнитура 2"><p>Петли Blum</p></div>
+                <div class="carousel-slide"><img src="png/a (2).jpg" alt="Фурнитура 3"><p>Выдвижные системы</p></div>
+                <div class="carousel-slide"><img src="png/a (2).webp" alt="Фурнитура 4"><p>Амортизаторы</p></div>
+                <div class="carousel-slide"><img src="png/a (3).webp" alt="Фурнитура 5"><p>Секционные углы</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+<!-- специальные предложения -->
+<div class="offers-block">
+    <h3 class="block-title">Специальные предложения</h3>
+    <div class="offers-grid">
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 26.png" alt="Товар 1" class="offer-img">
+                <span class="price-badge">Хит продаж</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">1200 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф</span>
+                    <span class="current-price">960 руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 27.png" alt="Товар 2" class="offer-img">
+                <span class="price-badge">-15%</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">850 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф «Лима»</span>
+                    <span class="current-price">722.50 руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 28.png" alt="Товар 3" class="offer-img">
+                <span class="price-badge">-10%</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">2100 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф «Оливия»</span>
+                    <span class="current-price">1890 руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 32.png" alt="Товар 4" class="offer-img">
+                <span class="price-badge">Рассрочка</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">1600 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф «Адара»</span>
+                    <span class="current-price">1200 руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 33.png" alt="Товар 5" class="offer-img">
+                <span class="price-badge">-5%</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">950 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф «Стиль»</span>
+                    <span class="current-price">902.50 руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-card">
+            <div class="offer-img-wrapper">
+                <img src="png/Rectangle 34.png" alt="Товар 6" class="offer-img">
+                <span class="price-badge">-30%</span>
+            </div>
+            <div class="offer-info">
+                <div class="old-price-wrapper">
+                    <span class="old-price">3000 руб.</span>
+                </div>
+                <div class="price-row">
+                    <span class="product-name">Шкаф «Эко»</span>
+                    <span class="current-price">2100 руб.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offers-footer">
+                <a href="#" class="view-more-btn">Смотреть еще</a>
+            </div>
+    </div>
+</section>
+
+    <!-- акции скидки -->
+<section class="subscribe-section">
+    <div class="container subscribe-container">
+        <div class="subscribe-content">
+            <h2 class="subscribe-title">Акции</h2>
+            <p class="subscribe-subtitle">Узнай первым об акциях и скидках</p>
+            <div class="subscribe-form">
+                <input type="text" id="subscribeInput" placeholder="введите номер телефона или email" class="subscribe-input">
+            </div>
+            <div class="subscribe-btn-wrapper">
+                <button id="subscribeBtn" class="subscribe-btn">Подписаться</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- отзывы -->
+<section class="testimonial">
+    <div class="container">
+        <h2 class="section-title testimonial-title">Отзывы</h2>
+        <div class="testimonial-card">
+            <div class="testimonial-author">
+                <span class="author-name">@prlxlr13</span>
+            </div>
+            <div class="testimonial-text">
+                <p>Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда радость для хозяйки!</p>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- просто происзвдство-->
+<section class="production-section">
+    <div class="container">
+        <h2 class="production-title">Производство</h2>
+        <div class="production-image">
+            <img src="png/pr.png" alt="Наше производство">
+        </div>
+    </div>
+</section>
+
+
+<!-- контактиы -->
+<section class="contacts-section">
+    <div class="container contacts-container">
+        <h2 class="contacts-title">Контакты</h2>
+        <div class="contacts-grid">
+            
+            <!-- левая колона -->
+            <div class="contacts-info">
+                <div class="contact-item">
+                    <h4>Адрес офиса:</h4>
+                    <p>г.Минск ул П Бровки 45</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Номер телефона:</h4>
+                    <p>+375-25-919-92-90</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email:</h4>
+                    <p>info@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Режим работы:</h4>
+                    <p>пн-вс 9:00-21:00</p>
+                </div>
+            </div>
+            
+            <!-- праваыя -->
+            <div class="contacts-form-card">
+                <h3 class="form-card-title">Заказать консультацию</h3>
+                <div class="form-group">
+                    <input type="tel" id="contactPhone" placeholder="Номер телефона" class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <textarea id="contactMessage" placeholder="Комментарии" class="form-textarea" rows="4"></textarea>
+                </div>
+                <button id="contactSubmit" class="contact-btn">Заказать консультацию</button>
+            </div>
+        </div>
+
+        <!-- кнопки из макета -->
+        <div class="messenger-buttons">
+            <a href="https://telegram.org/" class="messenger-link" target="_blank" rel="noopener noreferrer">
+                <img src="png/tg (1).png" alt="Telegram" class="messenger-icon-img">
+                
+            </a>
+            <a href="https://www.viber.com/" class="messenger-link" target="_blank" rel="noopener noreferrer">
+                <img src="png/vi.png" alt="Viber" class="messenger-icon-img">
+                
+            </a>
+            <a href="https://www.whatsapp.com/" class="messenger-link" target="_blank" rel="noopener noreferrer">
+                <img src="png/tg (3).png" alt="WhatsApp" class="messenger-icon-img">
+                
+            </a>
+        </div>
+    </div>
+</section>
+    
+</main>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-column">
+            <h3 class="footer-logo">MADESHKAF</h3>
+            
+        </div>
+        
+        <div class="footer-column">
+            <h4 class="footer-title">Навигация</h4>
+            <ul class="footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column footer-map">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.682558319087!2d27.555340976448624!3d53.90298247237167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd9ff1b2b3f%3A0x2b5c2c5c2c5c2c5c!2z0YPQuy4gMS3QuSDQkdGA0L7QstC60LggNDUsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1700000000000!5m2!1sru!2sby" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+<script>
+    (function() {
+        // для времени
+        let deadline = new Date();
+        deadline.setMinutes(deadline.getMinutes() + 30);
+        deadline.setSeconds(deadline.getSeconds() + 59);
+
+        function updateTimer() {
+            const now = new Date();
+            const diff = deadline - now;
+
+            if (diff <= 0) {
+                document.getElementById('days').innerText = '00';
+                document.getElementById('hours').innerText = '00';
+                document.getElementById('minutes').innerText = '00';
+                document.getElementById('seconds').innerText = '00';
+                clearInterval(timerInterval);
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (86400000)) / (3600000));
+            const minutes = Math.floor((diff % 3600000) / 60000);
+            const seconds = Math.floor((diff % 60000) / 1000);
+
+            document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+        }
+
+        updateTimer();
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        const btn = document.getElementById('getDiscountBtn');
+        const phoneInput = document.getElementById('phoneInput');
+
+        if (btn && phoneInput) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const phone = phoneInput.value.trim();
+                if (phone === '') {
+                    alert('Пожалуйста, введите номер телефона');
+                    return;
+                }
+                if (phone.length < 7) {
+                    alert('Введите корректный номер телефона');
+                    return;
+                }
+                alert(`Спасибо! Ваш номер ${phone} принят. Менеджер свяжется с вами и применит скидку 10%.`);
+                
+            });
+        }
+    })();
+
+    
+</script>
+<script>
+    
+// Переключение табов
+const tabBtns = document.querySelectorAll('.tab-btn');
+const wrappers = document.querySelectorAll('.carousel-wrapper');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        wrappers.forEach(w => w.classList.remove('active'));
+        
+        if (tabId === 'materials') {
+            document.getElementById('carousel-materials').classList.add('active');
+            setTimeout(() => initCarousel('carousel-materials'), 50);
+        } else {
+            document.getElementById('carousel-furniture').classList.add('active');
+            setTimeout(() => initCarousel('carousel-furniture'), 50);
+        }
+    });
+});
+
+// Инициализация карусели
+function initCarousel(wrapperId) {
+    const wrapper = document.getElementById(wrapperId);
+    if (!wrapper) {
+        console.log('Wrapper not found:', wrapperId);
+        return;
+    }
+    
+    const track = wrapper.querySelector('.carousel-track');
+    if (!track) {
+        console.log('Track not found');
+        return;
+    }
+    
+    const slides = Array.from(track.children);
+    if (slides.length === 0) {
+        console.log('No slides found');
+        return;
+    }
+    
+    console.log('Initializing carousel with', slides.length, 'slides');
+    
+    // Настройки
+    let currentIndex = 2;
+    let slideWidth = slides[0].offsetWidth;
+    let gap = 24;
+    let isAnimating = false;
+    
+    // бесконечность
+    const originalSlides = slides.slice(0, 5);
+    for (let i = 0; i < originalSlides.length; i++) {
+        const clone = originalSlides[i].cloneNode(true);
+        track.appendChild(clone);
+    }
+    for (let i = 0; i < originalSlides.length; i++) {
+        const clone = originalSlides[i].cloneNode(true);
+        track.prepend(clone.cloneNode(true));
+    }
+    
+    const allSlides = Array.from(track.children);
+    currentIndex = Math.floor(allSlides.length / 2) - 1;
+    
+    function updateSlideWidth() {
+        slideWidth = allSlides[0].offsetWidth;
+        updateCarousel(false);
+    }
+    
+    function updateCarousel(animate = true) {
+        if (isAnimating && !animate) return;
+        const offset = -(currentIndex * (slideWidth + gap));
+        
+        if (animate) {
+            isAnimating = true;
+            track.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            track.style.transform = `translateX(${offset}px)`;
+            setTimeout(() => { isAnimating = false; }, 400);
+        } else {
+            track.style.transition = 'none';
+            track.style.transform = `translateX(${offset}px)`;
+        }
+        
+        //  центральный слайд обнова
+        setTimeout(() => {
+            allSlides.forEach(slide => slide.classList.remove('center-slide'));
+            const centerIndex = currentIndex + 1;
+            if (allSlides[centerIndex]) {
+                allSlides[centerIndex].classList.add('center-slide');
+            }
+        }, animate ? 420 : 0);
+    }
+    
+    // Проверка на границы для бесконечности
+    function checkBoundaries() {
+        const totalSlides = allSlides.length;
+        if (currentIndex <= 2) {
+            currentIndex = totalSlides - 4;
+            updateCarousel(false);
+        } else if (currentIndex >= totalSlides - 4) {
+            currentIndex = 2;
+            updateCarousel(false);
+        }
+    }
+    
+    // Обработчики кликов
+    function attachClickHandlers() {
+        allSlides.forEach((slide, idx) => {
+            // Удаляем старые обработчики
+            const oldHandler = slide._clickHandler;
+            if (oldHandler) {
+                slide.removeEventListener('click', oldHandler);
+            }
+            
+            //  новый обработчик
+            const handler = () => {
+                if (isAnimating) return;
+                
+                const visibleStart = currentIndex;
+                const visibleEnd = currentIndex + 2;
+                
+                if (idx < visibleStart) {
+                    // Клик на левый слайд
+                    currentIndex--;
+                    updateCarousel(true);
+                    setTimeout(() => {
+                        checkBoundaries();
+                        attachClickHandlers();
+                    }, 420);
+                } else if (idx > visibleEnd) {
+                    // Клик на правый слайд
+                    currentIndex++;
+                    updateCarousel(true);
+                    setTimeout(() => {
+                        checkBoundaries();
+                        attachClickHandlers();
+                    }, 420);
+                }
+            };
+            
+            slide._clickHandler = handler;
+            slide.addEventListener('click', handler);
+            slide.style.cursor = 'pointer';
+        });
+    }
+    
+    window.addEventListener('resize', () => {
+        updateSlideWidth();
+        attachClickHandlers();
+    });
+    
+    updateSlideWidth();
+    attachClickHandlers();
+    console.log('Carousel initialized successfully');
+}
+
+//  карусель при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    const activeWrapper = document.querySelector('.carousel-wrapper.active');
+    if (activeWrapper) {
+        setTimeout(() => initCarousel(activeWrapper.id), 100);
+    }
+});
+
+
+// Обработка формы подписки
+const subscribeBtn = document.getElementById('subscribeBtn');
+const subscribeInput = document.getElementById('subscribeInput');
+
+if (subscribeBtn && subscribeInput) {
+    subscribeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const value = subscribeInput.value.trim();
+        if (value === '') {
+            alert('Пожалуйста, введите номер телефона или email');
+            return;
+        }
+        // Простая проверка 
+        const isEmail = value.includes('@') && value.includes('.');
+        const isPhone = value.length >= 375 && /[\d\+\(\)\-]/.test(value);
+        
+        if (!isEmail && !isPhone) {
+            alert('Введите корректный email или номер телефона');
+            return;
+        }
+        alert(`Спасибо! Вы подписаны на наши акции.`);
+        subscribeInput.value = '';
+    });
+}
+
+// Переключение отзывов
+const dots = document.querySelectorAll('.dot');
+const testimonialText = document.querySelector('.testimonial-text p');
+const authorName = document.querySelector('.author-name');
+
+//  массива отзывов
+const reviews = [
+    {
+        author: '@prlxlr13',
+        text: 'Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда радость для хозяйки!'
+    },
+    {
+        author: '@ivan_petrov',
+        text: 'Заказывал шкаф-купе в спальню. Всё сделали качественно, в срок. Отдельное спасибо дизайнеру за прекрасный проект. Обязательно обращусь ещё!'
+    },
+    {
+        author: '@elena_smith',
+        text: 'Отличная компания! Делали кухню под ключ. Результат превзошёл ожидания. Всё аккуратно, красиво и функционально. Рекомендую!'
+    },
+    {
+        author: '@alex_d',
+        text: 'Профессиональный подход, внимательные менеджеры, качественная фурнитура. Мебель стоит своих денег. Спасибо за работу!'
+    }
+];
+
+if (dots.length > 1) {
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            // Обновляем активную точку
+            dots.forEach(d => d.classList.remove('active'));
+            dot.classList.add('active');
+            
+            // Обновляем контент
+            if (reviews[index]) {
+                authorName.textContent = reviews[index].author;
+                testimonialText.textContent = reviews[index].text;
+            }
+        });
+    });
+}
+
+// Обработка формы контактов
+const contactSubmit = document.getElementById('contactSubmit');
+const contactPhone = document.getElementById('contactPhone');
+const contactEmail = document.getElementById('contactEmail');
+const contactMessage = document.getElementById('contactMessage');
+
+if (contactSubmit) {
+    contactSubmit.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        let hasError = false;
+        
+        if (!contactPhone.value.trim()) {
+            alert('Пожалуйста, введите номер телефона');
+            hasError = true;
+        } else if (!contactEmail.value.trim()) {
+            alert('Пожалуйста, введите email');
+            hasError = true;
+        } else if (!contactMessage.value.trim()) {
+            alert('Пожалуйста, введите комментарий');
+            hasError = true;
+        }
+        
+        if (!hasError) {
+            alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+            contactPhone.value = '';
+            contactEmail.value = '';
+            contactMessage.value = '';
+        }
+    });
+}
+
+// Бургер-меню
+const burgerMenu = document.getElementById('burgerMenu');
+const navLinks = document.getElementById('navLinks');
+const body = document.body;
+
+if (burgerMenu && navLinks) {
+    burgerMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        burgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+            body.classList.remove('menu-open');
+        });
+    });
+    
+    // Закрытие меню при клике на затемнённую область
+    body.addEventListener('click', function(e) {
+        if (navLinks.classList.contains('active') && 
+            !navLinks.contains(e.target) && 
+            !burgerMenu.contains(e.target)) {
+            burgerMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+    });
+}
+</script>
+</body>
+</html>
